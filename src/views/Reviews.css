@@ -1,0 +1,17 @@
+.reviews-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.reviews-list {
+  margin: 0px 0px 0px 0px;
+  font-family: Roboto, sans-serif;
+}
+.reviews-item {
+  margin-bottom: 30px;
+}
+.reviews-title {
+  margin: 0px 0px 6px;
+}
+.reviews-text {
+margin: 0px;
+}

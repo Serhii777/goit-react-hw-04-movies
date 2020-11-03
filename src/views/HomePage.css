@@ -1,0 +1,20 @@
+.homepage {
+  margin: 0px 0px 30px 20px;
+  padding: 0px 0px 10px 0px;
+  font-family: Roboto, sans-serif;
+}
+
+.homepage-title {
+  font-weight: 700;
+  font-size: 36px;
+  margin: 0px;
+}
+
+.homepage-list {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.homepage-item{
+    margin-bottom: 5px;
+}

@@ -1,0 +1,16 @@
+.cast-list{
+margin: 0px 0px 0px 0px;
+font-family: Roboto, sans-serif;
+}
+.cast-item{
+margin-bottom: 30px;
+}
+.cast-image{
+margin-bottom: 10px;
+}
+.cast-title{
+    margin: 0px 0px 6px;
+}
+.cast-text{
+    margin: 0px;
+}

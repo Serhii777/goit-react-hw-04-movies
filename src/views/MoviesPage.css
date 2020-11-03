@@ -1,0 +1,33 @@
+.moviespage {
+  margin: 0px 0px 30px 20px;
+  padding: 0px 0px 10px 0px;
+  font-family: Roboto, sans-serif;
+}
+
+.moviespage-list {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.moviespage-item {
+  margin-bottom: 5px;
+}
+
+.error-wrapper {
+  display: flex;
+  width: 350px;
+  height: 150px;
+  background-color: #ffffff;
+  border: 5px solid #ff0000;
+  border-radius: 4px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 1px 2px 15px 5px rgba(0, 0, 0, 0.3),
+    1px 2px 15px 5px rgba(0, 0, 0, 0.24), 1px 2px 15px -1px rgba(0, 0, 0, 0.22);
+  margin: 100px auto;
+  padding: 15px;
+}
+.error-text {
+  font-size: 20px;
+  color: rgb(255, 8, 8);
+}

@@ -1,0 +1,24 @@
+.searchbox-form {
+  padding-left: 20px;
+}
+
+.searchbox-input {
+  margin-right: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.searchbox-button {
+  max-width: 150px;
+  font-size: 15px;
+  padding: 5px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgb(155, 207, 245);
+}
+
+.searchbox-button:hover {
+  background-color: rgb(94, 186, 252);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
