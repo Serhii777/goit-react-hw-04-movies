@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import moviesAPI from "../services/moviesAPI";
 import getQueryParams from "../utils/getQueryParams";
@@ -65,22 +65,23 @@ class MoviesPage extends Component {
       <div className="moviespage">
         <SearchBox onSubmit={this.handleChangeQuery} />
         {loading && <Spinner />}
-        {movies && (
-          <ul className="moviespage-list">
-            {movies.map((movie) => (
-              <li key={movie.id} className="moviespage-item">
-                <NavLink
-                  to={{
-                    pathname: `${match.url}/${movie.id}`,
-                    state: { from: this.props.location },
-                  }}>
-                  {movie.title ? movie.title : movie.name}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-        )}
-        {movies.length === 0 && (
+        {movies ? (
+          movies.length > 0 && (
+            <ul className="moviespage-list">
+              {movies.map((movie) => (
+                <li key={movie.id} className="moviespage-item">
+                  <Link
+                    to={{
+                      pathname: `${match.url}/${movie.id}`,
+                      state: { from: this.props.location },
+                    }}>
+                    {movie.title ? movie.title : movie.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )
+        ) : (
           <div className="error-wrapper">
             <p className="error-text">
               Unfortunately, no such movies was found, try changing your search

@@ -1,21 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import imageError from "../images/404-not-found-error-404.jpg";
-import routes from "../routes";
+import "./NotFound.css";
 
 const NotFound = () => {
-  const moviesPagePath = routes
-  .filter((route) => route.label === "Home")
-  .map((route) => route.path);
-
-  console.log(moviesPagePath);
-
   return (
-    <div>
-      <h1>Error</h1>
-      <img src={imageError} alt="Movies did't found" width="320" />
-      <p>
-        Упс, что-то пошло не так. Вот <Link to={moviesPagePath}> ссылка </Link> на главную страницу
+    <div className="error-wrapper">
+      <h1 className="error-title">Error!</h1>
+      <img
+        src={imageError}
+        alt="Movies did't found"
+        width="320"
+        className="error-img"
+      />
+      <p className="error-text">
+        Упс, что-то пошло не так. Вот{" "}
+        <Link to="/">
+          <span className="error-span">ссылка</span>
+        </Link>{" "}
+        на главную страницу
       </p>
     </div>
   );
